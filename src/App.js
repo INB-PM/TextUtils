@@ -5,6 +5,12 @@ import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
+import Uppercase from './components/Uppercase';
+import Lowercase from './components/Lowercase';
+import Capitalize from './components/Capitalize';
+import RemoveSpaces from './components/RemoveSpaces';
+import WordCounter from './components/WordCounter';
+import Speech from './components/Speech';
 
 import {
   BrowserRouter as Router,
@@ -55,6 +61,12 @@ function App() {
 
     <Routes>
       <Route path="/about" element={<About mode={mode}/>} />
+      <Route path="/uppercase" element={<Uppercase mode={mode} showAlert={showAlert}/>} />
+      <Route path="/lowercase" element={<Lowercase mode={mode} showAlert={showAlert}/>} />
+      <Route path="/capitalize" element={<Capitalize mode={mode} showAlert={showAlert}/>} />
+      <Route path="/spaces" element={<RemoveSpaces mode={mode} showAlert={showAlert}/>} />
+      <Route path="/word-counter" element={<WordCounter mode={mode} showAlert={showAlert}/>} />
+      <Route path="/speech" element={<Speech mode={mode} showAlert={showAlert}/>} />
       <Route path="/" element={<TextForm heading="Try Textutils - Word counter, character counter, Remove Extra spaces" mode={mode} showAlert={showAlert}/>} />
     </Routes>
     {/* <TextForm heading="Enter the Text to analyze below" mode={mode} showAlert={showAlert}/> */}

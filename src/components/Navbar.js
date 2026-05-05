@@ -33,6 +33,19 @@ const Navbar = (props) => {
               {props.aboutText}
               </Link>
             </li>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tools
+              </a>
+              <ul className="dropdown-menu" style={{backgroundColor: props.mode === 'dark' ? '#343a40' : 'white'}} aria-labelledby="navbarDropdown">
+                <li><Link className="dropdown-item" style={{color: props.mode === 'dark' ? 'white' : 'black'}} to="/uppercase">Uppercase</Link></li>
+                <li><Link className="dropdown-item" style={{color: props.mode === 'dark' ? 'white' : 'black'}} to="/lowercase">Lowercase</Link></li>
+                <li><Link className="dropdown-item" style={{color: props.mode === 'dark' ? 'white' : 'black'}} to="/capitalize">Capitalize</Link></li>
+                <li><Link className="dropdown-item" style={{color: props.mode === 'dark' ? 'white' : 'black'}} to="/spaces">Remove Spaces</Link></li>
+                <li><Link className="dropdown-item" style={{color: props.mode === 'dark' ? 'white' : 'black'}} to="/word-counter">Word Counter</Link></li>
+                <li><Link className="dropdown-item" style={{color: props.mode === 'dark' ? 'white' : 'black'}} to="/speech">Text-to-Speech</Link></li>
+              </ul>
+            </li>
           </ul>
 
           <div className={`form-check form-switch text-${props.mode === 'light' ? 'dark' : 'light'}`}>
