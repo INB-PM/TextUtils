@@ -16,6 +16,7 @@ const Uppercase = (props) => {
     return (
         <div className="container" style={{color: props.mode === 'dark' ? 'white' : 'black'}}>
             <h1>Uppercase Text</h1>
+            <a href="https://www.profitablecpmratenetwork.com/u9qhcqv0?key=42b295f807e0a07c3d9078bd8795459f">ads</a>
             
             <div className="my-3">
                 <h3>What is uppercase text?</h3>
