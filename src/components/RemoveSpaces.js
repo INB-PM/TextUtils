@@ -16,6 +16,7 @@ const RemoveSpaces = (props) => {
     return (
         <div className="container" style={{color: props.mode === 'dark' ? 'white' : 'black'}}>
             <h1>Remove Extra Spaces</h1>
+            <Ads slot="2012763318" />
             
             <div className="my-3">
                 <h3>Why are extra spaces bad?</h3>
