@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Ads from "./Ads";
 
 const WordCounter = (props) => {
     const [text, setText] = useState('');
