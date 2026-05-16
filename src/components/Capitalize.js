@@ -1,4 +1,4 @@
-import Ads from "./components/Ads";
+import Ads from "./Ads";
 import React, { useState } from "react";
 
 const Capitalize = (props) => {

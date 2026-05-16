@@ -1,4 +1,4 @@
-import Ads from "./components/Ads";
+import Ads from "./Ads";
 import React,{useState} from "react";
 
 // Declare a new state variable, which we'll call "count"
