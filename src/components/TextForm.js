@@ -1,3 +1,4 @@
+import Ads from "./Ads";
 import React,{useState} from "react";
 
 // Declare a new state variable, which we'll call "count"
@@ -88,7 +89,9 @@ const TextForm = (props) => {
             <p>{0.008 * text.split(" ").filter((element)=>{return element.length !==0}).length} Minutes read</p>
             <h2>Preview</h2>
             <p>{text.length>0?text:"Nothing to preview!"}</p>
-            </div>
+        </div>
+
+        <Ads slot="2012763318" />
         </>
   );
 };

@@ -1,4 +1,6 @@
 import React from 'react';
+import Ads from "./Ads";
+
 
 const About = (props) => {
 
@@ -40,6 +42,8 @@ const About = (props) => {
     return (
 <div className="container" style={{color: props.mode === 'dark' ? 'white' : '#042743'}}>
     <h2 className='my-2'>About Us</h2>
+     <Ads slot="2012763318" />
+
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
             <h2 class="accordion-header">
